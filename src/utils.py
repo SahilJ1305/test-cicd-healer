@@ -1,7 +1,7 @@
 import os          # unused import (LINTING bug, line 1)
 import json        # unused import (LINTING bug, line 2)
 
-def add(a, b)      # missing colon (SYNTAX bug, line 4)
+def add(a, b):      # missing colon (SYNTAX bug, line 4)
     return a + b
 
 def divide(a, b):
