@@ -1,6 +1,6 @@
-import pandas as pd          # not installed — IMPORT bug, line 1
-import numpy as np           # not installed — IMPORT bug, line 2
-from collections import Stack  # doesn't exist — IMPORT bug, line 3
+import pandas as pd          
+import numpy as np           
+from collections import Stack  
 
 def parse_data(data):
     return pd.DataFrame(data)
