@@ -1,8 +1,8 @@
 def format_greeting(name, age):
-    return "Hello " + name + " you are " + age + " years old"  # int + str — TYPE_ERROR, line 2
+    return "Hello " + str(name) + " you are " + str(age) + " years old"
 
 def format_price(price):
-    return "$" + price  
+    return "$" + price
 
 def repeat_word(word, times):
-    return word * "3"   
+    return word * "3"
