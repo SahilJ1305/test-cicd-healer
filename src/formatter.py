@@ -1,5 +1,5 @@
 def format_greeting(name, age):
-    return "Hello " + name + " you are " + age + " years old"  # int + str — TYPE_ERROR, line 2
+    return "Hello " + name + " you are " + age + " years old"  
 
 def format_price(price):
     return "$" + price  
