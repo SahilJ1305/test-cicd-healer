@@ -16,4 +16,4 @@ def test_max_of_two_first():
     assert max_of_two(10, 5) == 10
 
 def test_max_of_two_second():
-    assert max_of_two(3, 7) == 7
+    assert max_of_two(7, 3) == 7
