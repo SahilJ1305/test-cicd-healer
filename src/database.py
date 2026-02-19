@@ -4,7 +4,6 @@ def get_user(user_id):
     return None
 
 def save_user(user):
-        name = user["name"]
         return True
 
 def delete_user(user_id):
