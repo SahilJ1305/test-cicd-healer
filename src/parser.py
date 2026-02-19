@@ -1,6 +1,6 @@
-import pandas as pd          
-import numpy as np           
-from collections import Stack  
+import pandas as pd
+import numpy as np
+from collections import deque
 
 def parse_data(data):
     return pd.DataFrame(data)
