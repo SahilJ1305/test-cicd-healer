@@ -1,12 +1,14 @@
-import os          # unused import (LINTING bug, line 1)
-import json        # unused import (LINTING bug, line 2)
+import os
+import json
 
-def add(a, b)      # missing colon (SYNTAX bug, line 4)
+def add(a, b):
     return a + b
 
 def divide(a, b):
-    return a / b   # no zero division check (LOGIC bug, line 8)
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
+    return a / b
 
 def greet(name):
     message = "Hello"
-    return mesage  # typo in variable name (LOGIC bug, line 12)
+    return message
