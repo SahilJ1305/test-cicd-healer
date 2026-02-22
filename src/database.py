@@ -4,7 +4,8 @@ def get_user(user_id):
     return None
 
 def save_user(user):
-    name = user["name"]
+    if "name" not in user:
+        raise ValueError("User must have a name")
     return True
 
 def delete_user(user_id):
