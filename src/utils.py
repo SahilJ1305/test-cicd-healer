@@ -18,8 +18,11 @@ def is_even(a):
 def max_of_two(a, b):
     if a > b:
         return a
-    return b
+    elif a < b:
+        return b
+    else:
+        return a
 
 def greet(name):
-    message = "Hello"
+    message = "Hello, " + name + "!"
     return message
