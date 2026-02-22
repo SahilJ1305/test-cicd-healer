@@ -21,5 +21,5 @@ def max_of_two(a, b):
     return b
 
 def greet(name):
-    message = "Hello"
+    message = "Hello, " + name
     return message
