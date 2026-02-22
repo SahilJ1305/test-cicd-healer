@@ -10,5 +10,5 @@ def divide(a, b):
     return a / b
 
 def greet(name):
-    message = "Hello"
+    message = "Hello, " + name + "!"
     return message
