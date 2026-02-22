@@ -1,7 +1,7 @@
 import os          # unused import (LINTING bug, line 1)
 import json        # unused import (LINTING bug, line 2)
 
-def add(a, b)      # missing colon (SYNTAX bug, line 4)
+def add(a, b):      # fixed syntax
     return a + b
 
 def divide(a, b):
@@ -9,4 +9,4 @@ def divide(a, b):
 
 def greet(name):
     message = "Hello"
-    return mesage  # typo in variable name (LOGIC bug, line 12)
+    return message  # typo in variable name (LOGIC bug, line 12)
