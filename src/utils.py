@@ -9,6 +9,17 @@ def divide(a, b):
         raise ZeroDivisionError("division by zero")
     return a / b
 
+def multiply(a, b):
+    return a * b
+
+def is_even(a):
+    return a % 2 == 0
+
+def max_of_two(a, b):
+    if a > b:
+        return a
+    return b
+
 def greet(name):
     message = "Hello"
     return message
