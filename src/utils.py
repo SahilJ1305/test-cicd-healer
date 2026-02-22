@@ -7,5 +7,5 @@ def divide(a, b):
     return a / b
 
 def greet(name):
-    message = "Hello, " + name  # Fixed typo in variable name
+    message = "Hello, " + str(name)  # Convert name to string explicitly
     return message
