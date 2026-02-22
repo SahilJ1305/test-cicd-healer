@@ -1,4 +1,3 @@
-import numpy as np
 from collections import Stack
 
 def parse_data(data):
