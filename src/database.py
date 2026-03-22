@@ -6,8 +6,6 @@ import os
 import uuid
 from datetime import datetime
 from collections import OrderedDict
-from cryptography.fernet import Fernet, InvalidSignature   # 'cryptography' not installed — ImportError
-
 
 class DatabaseManager:
     """Simple file-backed JSON database for run records."""
