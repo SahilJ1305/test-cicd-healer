@@ -5,7 +5,7 @@ import json
 import os
 import uuid
 from datetime import datetime
-from cryptography.fernet import Fernet, InvalidSignature   # 'cryptography' not installed — ImportError
+from collections import OrderedDict
 
 class DatabaseManager:
     """Simple file-backed JSON database for run records."""
