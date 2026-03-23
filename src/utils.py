@@ -1,7 +1,7 @@
 # src/utils.py
 # General-purpose helper utilities
 
-from typing import Any, Optional
+from typing import Any
 
 def flatten_list(nested: list) -> list:
     """Recursively flatten a nested list into a single list."""
