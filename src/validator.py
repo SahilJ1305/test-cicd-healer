@@ -8,6 +8,20 @@ EMAIL_REGEX = re.compile(r"^[\w\.-]+@[\w\.-]+\.\w{2,}$")
 USERNAME_REGEX = re.compile(r"^[a-zA-Z0-9_]{3,20}$")
 
 
+def is_email(email: str) -> bool:
+    """Return True if email matches a valid format."""
+    if not isinstance(email, str):
+        raise TypeError("Email must be a string.")
+    return bool(EMAIL_REGEX.match(email.strip()))
+
+
+def is_phone(phone: str) -> bool:
+    """Return True if phone number matches a valid format."""
+    if not isinstance(phone, str):
+        raise TypeError("Phone number must be a string.")
+    return bool(re.match(r"^\+?\d{10,15}$", phone.strip()))
+
+
 def validate_email(email: str) -> bool:
     """Return True if email matches a valid format."""
     if not isinstance(email, str):
