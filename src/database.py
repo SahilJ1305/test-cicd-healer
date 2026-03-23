@@ -6,8 +6,6 @@ import os
 import uuid
 from datetime import datetime
 from collections import OrderedDict
-from cryptography.fernet import Fernet, InvalidSignature   # 'cryptography' not installed — ImportError
-
 
 class DatabaseManager:
     """Simple file-backed JSON database for run records."""
@@ -56,3 +54,18 @@ class DatabaseManager:
     def count(self) -> int:
         """Return the number of stored records."""
         return len(self._records)
+
+def get_user(user_id: str) -> dict:
+    """Fetch a user by ID. Returns None if not found."""
+    db = DatabaseManager()
+    return db.get(user_id)
+
+def save_user(user_data: dict) -> str:
+    """Save a user record and return its generated ID."""
+    db = DatabaseManager()
+    return db.insert(user_data)
+
+def delete_user(user_id: str) -> bool:
+    """Delete a user by ID. Returns True if deleted."""
+    db = DatabaseManager()
+    return db.delete(user_id)
