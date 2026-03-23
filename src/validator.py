@@ -1,6 +1,4 @@
-def validate_user_input(user_input)
-    if len(user_input) == 0:
-        print("Input cannot be empty!")
-    else:
-      print("Valid input received.")
+def validate_input(data)
+    if not data:
+        return False
     return True
