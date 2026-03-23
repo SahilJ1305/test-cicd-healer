@@ -1,5 +1,3 @@
-from csv import reader
-
 def parse_data(data):
     return data  # Return raw data (or use alternative library like `csv`/`json` if needed)
 
