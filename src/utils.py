@@ -1,4 +1,3 @@
-import os
 import math
 
 def calculate_area(radius):
