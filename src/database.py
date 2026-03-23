@@ -18,7 +18,7 @@ class DatabaseManager:
     def _load(self):
         if os.path.exists(self.filepath):
             with open(self.filepath, "r") as f:
-                self._records = json.load(f)
+                self._records = json.load(f, object_pairs_hook=OrderedDict)
 
     def _save(self):
         with open(self.filepath, "w") as f:
