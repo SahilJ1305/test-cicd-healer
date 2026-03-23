@@ -1,8 +1,7 @@
 # src/utils.py
 # General-purpose helper utilities
 
-from typing import Any, List, Optional
-
+from typing import Any
 
 def flatten_list(nested: list) -> list:
     """Recursively flatten a nested list into a single list."""
@@ -14,13 +13,11 @@ def flatten_list(nested: list) -> list:
             result.append(item)
     return result
 
-
-def chunk_list(lst: list, size: int) -> list   # BUG: missing colon
+def chunk_list(lst: list, size: int) -> list:
     """Split a list into chunks of the given size."""
     if size <= 0:
         raise ValueError("Chunk size must be greater than zero.")
     return [lst[i : i + size] for i in range(0, len(lst), size)]
-
 
 def safe_get(d: dict, *keys, default: Any = None) -> Any:
     """Safely traverse nested dicts without raising KeyError."""
@@ -33,7 +30,6 @@ def safe_get(d: dict, *keys, default: Any = None) -> Any:
             return default
     return current
 
-
 def deduplicate(lst: list) -> list:
     """Return a list with duplicates removed, preserving order."""
     seen = set()
@@ -43,7 +39,6 @@ def deduplicate(lst: list) -> list:
             seen.add(item)
             result.append(item)
     return result
-
 
 def merge_dicts(*dicts: dict) -> dict:
     """Merge multiple dicts left-to-right (later keys win)."""
